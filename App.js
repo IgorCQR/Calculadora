@@ -6,7 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
 
-      <Text style={styles.titulo}>Calculadora (não é a do Fukuta)</Text>
+      <Text style={styles.titulo}>Calculadora</Text>
 
       <Text style={styles.painel}>0</Text>
 
@@ -95,10 +95,10 @@ export default function App() {
         <TouchableOpacity style={styles.botaoNumeros}>
           <Text style={[styles.textNumeros, {textAlign:'center'}]}>.</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.botaoNumeros, {backgroundColor: '#32c5ff8a'}]}>
+        <TouchableOpacity style={styles.botaoNumeros}>
           <Text style={[styles.textNumeros, {textAlign:'center'}]}>=</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.botaoNumeros}>
+        <TouchableOpacity style={[styles.botaoNumeros, {backgroundColor: '#ff00009d'}]}>
           <Text style={[styles.textNumeros, {textAlign:'center'}]}>+</Text>
         </TouchableOpacity>
       </View>
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   },
   painel:{
     width: '100%',
-    textAlign: 'left',
+    textAlign: 'right',
     fontSize: 36,
     fontWeight: 'bold',
     backgroundColor: 'lightgray',
